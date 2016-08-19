@@ -19,28 +19,12 @@
     <![endif]-->
 
     <!-- Bootstrap/styling -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/bootstrap-3.3.6-dist/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- vis/styling -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" type="text/css" />
-    <!-- reporting app/styling -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/reporting_app.css') }}">
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.colVis.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/buttons/1.1.2/css/buttons.bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
-
-    <!-- humanize and column formatting -->
-    <script src="/static/humanize.js"></script>
-    <script src="/static/column_formatter.js"></script>
 
     <title>{% block title %}{% endblock %} - Edinburgh Genomics Analysis Driver Reports</title>
     {% endblock %}
