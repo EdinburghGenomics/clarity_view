@@ -1,0 +1,43 @@
+{% extends 'reporting_base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+{% if table %}
+    <h3>{{ table.title }}</h3>
+
+    <table id="{{ table.title }}" class="table table-hover table-condensed table-responsive">
+        <thead>
+            <tr>
+                {% for col in table.cols %}
+                   <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in table.rows %}
+                <tr>
+                    {% for col in row %}
+                       <td>{{ col }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<script type="text/javascript" language="JavaScript" class="init">
+
+$(document).ready(function() {
+    $("#{{ table.title }}").DataTable();
+} );
+</script>
+
+{% endif %}
+
+{% endblock %}
